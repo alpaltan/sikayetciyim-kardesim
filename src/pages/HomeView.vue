@@ -27,7 +27,7 @@ import SikayetListeleme from "../components/SikayetMainBox.vue"
 
 .MainDiv {
   width: 100%;
-  height: 90vmin;
+  height: max-content;
   display: flex;
 }
 
@@ -36,11 +36,12 @@ import SikayetListeleme from "../components/SikayetMainBox.vue"
   height: 100%;
   padding-left: 10%;
   padding-right: 4%;
+  border-right: 1px solid black;
 }
 
 .RightSideDiv {
   width: 20%;
   height: 100%;
-  border: 1px solid blue;
+
 }
 </style>

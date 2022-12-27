@@ -34,9 +34,14 @@
 <style scoped>
 .navbar {
     height: auto;
-    font-family: roboto-bold;
+
     min-height: 60px;
     width: 100%;
+}
+
+.navbar a {
+    font-family: roboto-bold;
+    font-size: 21px;
 }
 
 .Giris {
