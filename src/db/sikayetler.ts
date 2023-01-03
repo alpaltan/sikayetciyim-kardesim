@@ -6,9 +6,9 @@ interface SikayetOzellik {
     CevapDurumu: boolean,
     Goruntulenme: number,
     SikayetMetni: string,
-    SikayetNumarasi: number
+    SikayetNumarasi: string,
+    SikayetCevabi: string
 }
-
 
 export const Sikayet: Array<SikayetOzellik> = [
     {
@@ -19,7 +19,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: false,
         Goruntulenme: 5,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 1,
+        SikayetNumarasi: "1",
+        SikayetCevabi: " "
     },
     {
         SirketAdi: "Adidas",
@@ -29,7 +30,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: false,
         Goruntulenme: 52,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 2,
+        SikayetNumarasi: "2",
+        SikayetCevabi: " "
     },
     {
         SirketAdi: "Nike",
@@ -39,7 +41,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: true,
         Goruntulenme: 323,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 3,
+        SikayetNumarasi: "3",
+        SikayetCevabi: "Ornek cevap 123123123 "
     },
     {
         SirketAdi: "Nike",
@@ -49,7 +52,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: true,
         Goruntulenme: 12,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 4,
+        SikayetNumarasi: "4",
+        SikayetCevabi: "Ornek cevap 123123123 "
     },
     {
         SirketAdi: "Nike",
@@ -59,7 +63,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: true,
         Goruntulenme: 442,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 5,
+        SikayetNumarasi: "5",
+        SikayetCevabi: "Ornek cevap 123123123 "
     },
     {
         SirketAdi: "VANS",
@@ -69,7 +74,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: true,
         Goruntulenme: 123,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 6,
+        SikayetNumarasi: "6",
+        SikayetCevabi: "Ornek cevap 123123123 "
     },
     {
         SirketAdi: "Puma",
@@ -79,7 +85,8 @@ export const Sikayet: Array<SikayetOzellik> = [
         CevapDurumu: true,
         Goruntulenme: 512,
         SikayetMetni: "Geçenlerde bir outlet mağazasından bir çift ayakkabı satın aldım ve sadece birkaç giymeden sonra dağılmaya başladıklarını görünce çok hayal kırıklığına uğradım. Ayakkabının tabanı sayadan ayrılmaya, burun kısmındaki dikişler açılmaya başladı. Bu markadan daha iyi kalite bekliyordum ve satın aldığımdan çok mutsuzum. Bu outlet mağazasından alışveriş yapmanızı tavsiye etmem",
-        SikayetNumarasi: 7,
+        SikayetNumarasi: "7",
+        SikayetCevabi: "Ornek cevap 123123123 "
     },
 
 ]
