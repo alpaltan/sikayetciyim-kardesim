@@ -62,8 +62,21 @@ import { ref } from "vue";
 import { vShow } from "vue";
 import { RouterLink } from "vue-router";
 import SikayetCevap from "../components/SikayetCevap.vue";
-import fonksiyon from "../db/sikayet.js";
-import fs from "fs";
+import axios from 'axios';
+
+async function getData() {
+    try {
+        // Make a GET request to the server to retrieve the JSON file
+        const response = await fetch('../db/veriler.json');
+
+        // The JSON data is available in the response.json() method
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 
 let IndexOgren = (a: number) => {
     sikayetIndex.value = a;
@@ -73,11 +86,13 @@ let CevapKutusu: boolean;
 let sikayetIndex = ref(0);
 let CevapYaz = () => {
 }
-const element = document.getElementById("CevapButton");
-let GosterGizle = () => {
+var button = document.getElementById("CevapButton");
+button?.addEventListener("click", GosterGizle);
+function GosterGizle() {
     CevapKutusu = !CevapKutusu;
 }
-element?.addEventListener("click", GosterGizle);
+
+
 
 </script>
 

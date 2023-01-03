@@ -9,8 +9,7 @@
   "compilerOptions": {
     "composite": true,
     "types": [
-      "node",
-    ],
-    "allowJs": true,
-  },
+      "node"
+    ]
+  }
 }

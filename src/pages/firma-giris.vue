@@ -7,7 +7,7 @@
             </div>
             <h2>Giris</h2>
             <h3>Firma Girisi</h3>
-            <form class="login-form">
+            <form action="/home" class="login-form">
                 <div class="textbox">
                     <input type="email" placeholder="E-mail" />
                     <span class="material-symbols-outlined"> account_circle </span>
@@ -16,7 +16,7 @@
                     <input type="password" placeholder="Parola" />
                     <span class="material-symbols-outlined"> lock </span>
                 </div>
-                <button type="submit">GIRIS</button>
+                <button @click="Login()" type="submit">GIRIS</button>
                 <a href="#">Giris yapamiyor musun?</a>
             </form>
         </div>
@@ -24,7 +24,9 @@
 </template>
 
 <script setup lang="ts">
-
+function Login() {
+    console.log("Giriş yapıldı.");
+}
 </script>
 
 <style scoped>

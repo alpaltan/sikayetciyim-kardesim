@@ -6,14 +6,14 @@
                 <div class="content">
                     <h2>Profil Bilgileri</h2>
                     <img class="logo" src="Logo.png" alt="">
-                    <div class="isim">Profil İsmi</div>
+                    <div class="isim">Ad Soyad: {{ Ad }}</div>
                     <div class="content-detail">
                         <br>
-                        mail: asdsd
+                        Mail Adres: {{ mail }}
                         <br><br>
-                        telefon:asdsda
+                        Telefon Numarası: {{ telefon }}
                         <br><br>
-                        id:sadasd
+                        Musteri ID: {{ id }}
                         <br><br>
                     </div>
                 </div>
@@ -25,7 +25,12 @@
 </template>
 
 <script setup lang="ts">
-
+import Kullanicilar from "../db/veriler.json"
+import { ref } from "vue";
+let Ad = ref(Kullanicilar.musteriler[0].adi_soyadi);
+let mail = ref(Kullanicilar.musteriler[0].email);
+let telefon = ref(Kullanicilar.musteriler[0].telefon);
+let id = ref(Kullanicilar.musteriler[0].musteri_id);
 </script>
 
 <style scoped>
@@ -58,7 +63,7 @@
     width: 26%;
     background-color: rgb(203, 68, 68);
     padding: 2%;
-    text-align: center;
+    text-align: left;
     border-radius: 20px;
     display: inline-block;
 }

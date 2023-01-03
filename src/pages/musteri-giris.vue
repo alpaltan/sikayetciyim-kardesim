@@ -5,11 +5,11 @@
             <div class="login-card">
                 <h2>Giris</h2>
                 <h3>Musteri Girisi</h3>
-                <form action="#" id="login-form">
+                <form action="/sikayetler" id="login-form">
                     <input id="email" type="text" placeholder="E-Mail" required />
                     <input id="sifre" type="password" placeholder="Parola" required />
                     <a href="#">Sifremi unuttum?</a>
-                    <button id="login" type="submit">LOGIN</button>
+                    <button @click="Login()" id="login" type="submit">LOGIN</button>
                 </form>
             </div>
         </div>
@@ -17,7 +17,9 @@
 </template>
 
 <script setup lang="ts">
-
+function Login() {
+    console.log("Giriş yapıldı.");
+}
 </script>
 
 <style scoped>
