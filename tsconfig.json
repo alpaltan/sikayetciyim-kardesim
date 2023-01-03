@@ -8,12 +8,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "allowJs": true,
-    "types": [
-      "jest",
-      "puppeteer",
-      "node",
-    ],
-    "resolveJsonModule": true,
     "paths": {
       "@/*": [
         "./src/*"
