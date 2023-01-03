@@ -22,36 +22,37 @@ import { Sikayet } from '../db/sikayetler';
 .Genel {
     width: 100%;
     height: 150px;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     margin-top: 3%;
     padding-left: 3%;
     padding-top: 10px;
     padding-right: 3%;
+    color: white;
 }
 
 .HeaderDiv {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .Header {
     font-family: roboto-bold;
     text-decoration: none;
-    font-size: 22px;
-    color: red;
+    font-size: 26px;
+    color: #DD2D4A;
 }
 
 .View {
     position: relative;
     float: right;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .Label {
     font-size: 16px;
     text-decoration: none;
     padding-left: 6px;
-    color: black;
+    color: white;
     font-family: roboto-bold;
 }
 

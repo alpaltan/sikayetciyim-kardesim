@@ -1,7 +1,7 @@
 <template>
     <div class="Sidebar">
         <router-link id="Router" to="#" v-for="(item, index) in Sikayet" :key="index">
-            <a class="SikayetBaslik" href="#">-- {{ item.SikayetBasligi }}</a>
+            <a @click="" class="SikayetBaslik">{{ item.SikayetBasligi }}</a>
         </router-link>
     </div>
 </template>
@@ -9,17 +9,18 @@
 <script setup lang="ts">
 import { Sikayet } from "../db/sikayetler"
 import { RouterLink } from "vue-router";
-
 </script>
 
 <style scoped>
 .SikayetBaslik {
-    display: flex;
+    display: grid;
     justify-items: center;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: larger;
-    font-family: roboto-regular;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    font-family: poppins;
 }
 
 #Router {
@@ -29,13 +30,12 @@ import { RouterLink } from "vue-router";
 }
 
 .Sidebar {
-    width: 20%;
+    width: 250px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding-left: 4%;
-    padding-top: 5%;
-    border-right: 1px solid black;
+    padding-top: 10%;
+    border-right: 1px solid white;
 }
 </style>
